@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Winter Gallery</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Winter<span>Gallery</span></a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Photography &amp; Art</p>
+      <h1 class="hero-title">Winter <em>Gallery</em></h1>
+      <p class="hero-subtitle">Capturing the quiet beauty of frozen moments, soft light, and still landscapes through the lens of winter.</p>
+      <div class="hero-btns">
+        <a href="#gallery" class="btn btn-primary">View Gallery</a>
+        <a href="#about" class="btn btn-ghost">About Us</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll Down</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1491555103944-7c647fd857e6?w=600&q=80"
+            alt="Winter landscape photography"
+            class="about-img"
+          />
+          <div class="about-badge">
+            <span class="badge-num">10+</span>
+            <span class="badge-text">Years of Experience</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="section-eyebrow">Who We Are</p>
+          <h2 class="section-title">A Passion for <em>Winter Light</em></h2>
+          <p class="about-desc">
+            We are a collective of photographers obsessed with winter's silent palette — the blue-grey of dawn frost, the gold that lingers in bare branches, the mirror-still surfaces of iced-over lakes.
+          </p>
+          <p class="about-desc">
+            Every photograph in this gallery is shot on location in the world's coldest seasons, with no studio trickery — only patience, timing, and a deep love for the cold.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">320+</span>
+              <span class="stat-label">Photographs</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">48</span>
+              <span class="stat-label">Locations</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">15k</span>
+              <span class="stat-label">Followers</span>
+            </div>
+          </div>
+          <a href="#gallery" class="btn btn-primary">Explore Work</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GALLERY SECTION ========== -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Our Collection</p>
+        <h2 class="section-title">Photo <em>Gallery</em></h2>
+        <p class="section-sub">Each image tells a story of cold mornings, icy breath, and the world paused under snow.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="landscape">Landscape</button>
+        <button class="filter-btn" data-filter="portrait">Portrait</button>
+        <button class="filter-btn" data-filter="wildlife">Wildlife</button>
+        <button class="filter-btn" data-filter="architecture">Architecture</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid">
+        <div class="gallery-item" data-category="landscape">
+          <img src="https://images.unsplash.com/photo-1517299321609-52687d1bc55a?w=600&q=80" alt="Snow forest" />
+          <div class="gallery-overlay">
+            <h3>Silent Forest</h3>
+            <p>Norway, 2023</p>
+          </div>
+        </div>
+        <div class="gallery-item tall" data-category="portrait">
+          <img src="https://images.unsplash.com/photo-1609902726285-00668009f004?w=600&q=80" alt="Winter portrait" />
+          <div class="gallery-overlay">
+            <h3>Frost &amp; Grace</h3>
+            <p>Iceland, 2023</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="architecture">
+          <img src="https://images.unsplash.com/photo-1548438294-1ad5d5f4f063?w=600&q=80" alt="Winter cabin" />
+          <div class="gallery-overlay">
+            <h3>Mountain Refuge</h3>
+            <p>Alps, 2022</p>
+          </div>
+        </div>
+        <div class="gallery-item wide" data-category="landscape">
+          <img src="https://images.unsplash.com/photo-1455156218388-5e61b526818b?w=900&q=80" alt="Frozen lake" />
+          <div class="gallery-overlay">
+            <h3>Glass Lake</h3>
+            <p>Finland, 2023</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="wildlife">
+          <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=600&q=80" alt="Winter fox" />
+          <div class="gallery-overlay">
+            <h3>Red Fox at Dawn</h3>
+            <p>Sweden, 2022</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="landscape">
+          <img src="https://images.unsplash.com/photo-1483664852095-d6cc6870702d?w=600&q=80" alt="Aurora borealis" />
+          <div class="gallery-overlay">
+            <h3>Northern Lights</h3>
+            <p>Norway, 2023</p>
+          </div>
+        </div>
+        <div class="gallery-item tall" data-category="architecture">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80" alt="Winter home" />
+          <div class="gallery-overlay">
+            <h3>Snowed In</h3>
+            <p>Canada, 2022</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="wildlife">
+          <img src="https://images.unsplash.com/photo-1589656966895-2f33e7653819?w=600&q=80" alt="Winter owl" />
+          <div class="gallery-overlay">
+            <h3>The Watcher</h3>
+            <p>Siberia, 2023</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="portrait">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&q=80" alt="Winter face" />
+          <div class="gallery-overlay">
+            <h3>First Snow</h3>
+            <p>Russia, 2022</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-load-more">
+        <a href="#" class="btn btn-outline">Load More Photos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PORTFOLIO / FEATURED SECTION ========== -->
+  <section class="portfolio section" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Featured Work</p>
+        <h2 class="section-title">Selected <em>Portfolio</em></h2>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img src="https://images.unsplash.com/photo-1548266652-99cf27701ced?w=700&q=80" alt="Portfolio 1" />
+          <div class="portfolio-info">
+            <h3>Arctic Silence</h3>
+            <p>Landscape Series · 2023</p>
+            <a href="#" class="portfolio-link">View Project →</a>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=700&q=80" alt="Portfolio 2" />
+          <div class="portfolio-info">
+            <h3>Icelandic Dreams</h3>
+            <p>Travel Photography · 2023</p>
+            <a href="#" class="portfolio-link">View Project →</a>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?w=700&q=80" alt="Portfolio 3" />
+          <div class="portfolio-info">
+            <h3>Frozen Hours</h3>
+            <p>Fine Art · 2022</p>
+            <a href="#" class="portfolio-link">View Project →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="testimonials section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Kind Words</p>
+        <h2 class="section-title">What Clients <em>Say</em></h2>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">The winter landscape series took our breath away. Utterly still, utterly beautiful — exactly what we needed for our hotel rebrand.</p>
+          <div class="testi-author">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80" alt="Client 1" />
+            <div>
+              <strong>Marcus Hellman</strong>
+              <span>Creative Director, Fjord Hotels</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">I commissioned three prints from the Arctic Silence series. They arrived perfectly framed and they're the centrepiece of my living room now.</p>
+          <div class="testi-author">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Client 2" />
+            <div>
+              <strong>Sophia Renard</strong>
+              <span>Interior Designer, Paris</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">The team's ability to find light in the darkest season is remarkable. Our magazine cover shoot in Lapland was flawless.</p>
+          <div class="testi-author">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80" alt="Client 3" />
+            <div>
+              <strong>Erik Lindqvist</strong>
+              <span>Editor, Nordic Living Mag</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="section-eyebrow">Get In Touch</p>
+          <h2 class="section-title">Let's Work <em>Together</em></h2>
+          <p class="contact-desc">Whether you're looking for fine art prints, a commissioned shoot, or a licensing inquiry — we'd love to hear from you.</p>
+          <ul class="contact-details">
+            <li>
+              <span class="contact-icon">📍</span>
+              <span>Studio Oslo, Bygdøy Allé 12, Norway</span>
+            </li>
+            <li>
+              <span class="contact-icon">📞</span>
+              <span>+47 22 123 456</span>
+            </li>
+            <li>
+              <span class="contact-icon">✉️</span>
+              <span>hello@wintergallery.no</span>
+            </li>
+          </ul>
+          <div class="social-links">
+            <a href="#" class="social-btn">Instagram</a>
+            <a href="#" class="social-btn">Behance</a>
+            <a href="#" class="social-btn">500px</a>
+          </div>
+        </div>
+        <div class="contact-form-wrap">
+          <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="your@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" placeholder="How can we help?" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" placeholder="Tell us about your project…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            <div class="form-success" id="form-success">✓ Message sent! We'll be in touch soon.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">Winter<span>Gallery</span></a>
+          <p>Photographs of the quiet season, available as fine art prints and for commercial licensing worldwide.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Fine Art Prints</a></li>
+            <li><a href="#">Commercial Licensing</a></li>
+            <li><a href="#">Commissioned Shoots</a></li>
+            <li><a href="#">Workshops</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Stay Updated</h4>
+          <p>New photographs every season — straight to your inbox.</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Your email address" />
+            <button class="btn btn-primary">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Winter Gallery. All rights reserved. Designed with ❄️ in Oslo.</p>
+        <div class="footer-socials">
+          <a href="#">Instagram</a>
+          <a href="#">Behance</a>
+          <a href="#">500px</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
